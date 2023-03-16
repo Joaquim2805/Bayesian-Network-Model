@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="wine_1_" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="color_intensity" diagtype="observation" ranked="true">
+			<state id="s1_below_4" />
+			<state id="s2_4_7" />
+			<state id="s3_7_10" />
+			<state id="s4_10_up" />
+			<probabilities>0.4101123595505618 0.4044943820224719 0.1460674157303371 0.03932584269662921</probabilities>
+		</cpt>
+		<cpt id="group" diagtype="target">
+			<state id="Group_1" fault="true" />
+			<state id="Group_2" fault="true" />
+			<state id="Group_3" fault="true" />
+			<parents>color_intensity</parents>
+			<probabilities>0.1095890410958904 0.8493150684931506 0.0410958904109589 0.611111111111111 0.125 0.2638888888888889 0.2716049382716049 0.01234567901234568 0.7160493827160493 0.04166666666666666 0.04166666666666666 0.9166666666666666</probabilities>
+		</cpt>
+		<cpt id="alcohol" diagtype="observation" ranked="true">
+			<state id="s1_below_11" />
+			<state id="s2_11_12" />
+			<state id="s3_12_13" />
+			<state id="s4_13_up" />
+			<parents>group</parents>
+			<probabilities>0.004166666666666667 0.0375 0.6041666666666666 0.3541666666666667 0.2673611111111111 0.6006944444444444 0.1284722222222222 0.003472222222222222 0.00510204081632653 0.4132653061224489 0.5153061224489796 0.06632653061224489</probabilities>
+		</cpt>
+		<cpt id="malic_acid" diagtype="observation" ranked="true">
+			<state id="s1_below_2" />
+			<state id="s2_2_3" />
+			<state id="s3_3_4" />
+			<state id="s4_4_up" />
+			<parents>group</parents>
+			<probabilities>0.7708333333333334 0.1208333333333333 0.1041666666666667 0.004166666666666667 0.676056338028169 0.1971830985915493 0.1126760563380282 0.01408450704225352 0.125 0.3958333333333333 0.3125 0.1666666666666667</probabilities>
+		</cpt>
+		<cpt id="ash" diagtype="observation" ranked="true">
+			<state id="s1_below_1" />
+			<state id="s2_1_2" />
+			<state id="s3_2_2" />
+			<state id="s4_2_up" />
+			<probabilities>0.03370786516853932 0.348314606741573 0.5730337078651685 0.0449438202247191</probabilities>
+		</cpt>
+		<cpt id="alcalinity_of_ash" diagtype="observation" ranked="true">
+			<state id="s1_below_15" />
+			<state id="s2_15_20" />
+			<state id="s3_20_25" />
+			<state id="s4_25_up" />
+			<probabilities>0.07865168539325842 0.5449438202247191 0.3370786516853932 0.03932584269662921</probabilities>
+		</cpt>
+		<cpt id="magnesium" diagtype="observation" ranked="true">
+			<state id="s1_below_93" />
+			<state id="s2_93_116" />
+			<state id="s3_116_139" />
+			<state id="s4_139_up" />
+			<parents>group</parents>
+			<probabilities>0.07083333333333333 0.7041666666666666 0.2208333333333333 0.004166666666666667 0.6056338028169014 0.3098591549295775 0.04225352112676056 0.04225352112676056 0.3316326530612245 0.5561224489795918 0.1071428571428571 0.00510204081632653</probabilities>
+		</cpt>
+		<cpt id="Flavanoids" diagtype="observation" ranked="true">
+			<state id="s1_below_1" />
+			<state id="s2_1_2" />
+			<state id="s3_2_3" />
+			<state id="s4_3_up" />
+			<parents>group</parents>
+			<probabilities>0.004166666666666667 0.3041666666666666 0.6708333333333333 0.02083333333333333 0.1830985915492958 0.6619718309859155 0.1408450704225352 0.01408450704225352 0.9642857142857142 0.02551020408163265 0.00510204081632653 0.00510204081632653</probabilities>
+		</cpt>
+		<cpt id="total_phenols" diagtype="observation" ranked="true">
+			<state id="s1_below_1" />
+			<state id="s2_1_2" />
+			<state id="s3_2_3" />
+			<state id="s4_3_up" />
+			<parents>Flavanoids</parents>
+			<probabilities>0.6106557377049181 0.3319672131147541 0.05327868852459017 0.004098360655737705 0.09090909090909091 0.5 0.3787878787878788 0.0303030303030303 0.004901960784313725 0.004901960784313725 0.7696078431372549 0.2205882352941176 0.08333333333333333 0.08333333333333333 0.08333333333333333 0.75</probabilities>
+		</cpt>
+		<cpt id="OD280_OD315" diagtype="observation" ranked="true">
+			<state id="s1_below_1" />
+			<state id="s2_1_2" />
+			<state id="s3_2_3" />
+			<state id="s4_3_up" />
+			<parents>Flavanoids</parents>
+			<probabilities>0.7254098360655739 0.2172131147540984 0.05327868852459017 0.004098360655737705 0.01515151515151515 0.2424242424242424 0.5757575757575758 0.1666666666666667 0.004901960784313725 0.02450980392156863 0.5931372549019608 0.3774509803921569 0.08333333333333333 0.08333333333333333 0.4166666666666666 0.4166666666666666</probabilities>
+		</cpt>
+		<cpt id="Nonflavanoid_phenols" diagtype="observation" ranked="true">
+			<state id="s1_below_0" />
+			<state id="s2_0_0" />
+			<state id="s3_0_0" />
+			<state id="s4_0_up" />
+			<parents>OD280_OD315</parents>
+			<probabilities>0.1333333333333333 0.1333333333333333 0.4222222222222222 0.3111111111111111 0.06666666666666667 0.3 0.3666666666666666 0.2666666666666667 0.2916666666666666 0.4861111111111111 0.2083333333333333 0.01388888888888889 0.4765625 0.4765625 0.0390625 0.0078125</probabilities>
+		</cpt>
+		<cpt id="proanthocyanins" diagtype="observation" ranked="true">
+			<state id="s1_below_1" />
+			<state id="s2_1_1" />
+			<state id="s3_1_2" />
+			<state id="s4_2_up" />
+			<parents>Flavanoids</parents>
+			<probabilities>0.5778688524590164 0.3647540983606558 0.05327868852459017 0.004098360655737705 0.1060606060606061 0.7727272727272727 0.09090909090909091 0.0303030303030303 0.004901960784313725 0.5147058823529411 0.357843137254902 0.1225490196078431 0.08333333333333333 0.75 0.08333333333333333 0.08333333333333333</probabilities>
+		</cpt>
+		<cpt id="hue" diagtype="observation" ranked="true">
+			<state id="s1_below_0" />
+			<state id="s2_0_1" />
+			<state id="s3_1_1" />
+			<state id="s4_1_up" />
+			<parents>group</parents>
+			<probabilities>0.004166666666666667 0.6208333333333333 0.3708333333333333 0.004166666666666667 0.07042253521126761 0.5352112676056339 0.3521126760563381 0.04225352112676056 0.8214285714285714 0.1683673469387755 0.00510204081632653 0.00510204081632653</probabilities>
+		</cpt>
+		<cpt id="Proline" diagtype="observation" ranked="true">
+			<state id="s1_below_628" />
+			<state id="s2_628_979" />
+			<state id="s3_979_1329" />
+			<state id="s4_1329_up" />
+			<parents>group</parents>
+			<probabilities>0.004166666666666667 0.2375 0.6375 0.1208333333333333 0.7534722222222222 0.2256944444444444 0.01736111111111111 0.003472222222222222 0.4948979591836734 0.4948979591836734 0.00510204081632653 0.00510204081632653</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 3.0.6518.0 ACADEMIC" name="wine(1)">
+			<node id="group">
+				<name>group</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>242 364 314 412</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="alcohol">
+				<name>alcohol</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>335 47 407 95</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="malic_acid">
+				<name>malic_acid</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>501 142 573 190</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="ash">
+				<name>ash</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>173 137 245 185</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="alcalinity_of_ash">
+				<name>alcalinity_of_ash</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>169 243 241 291</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="magnesium">
+				<name>magnesium</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>590 266 662 314</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="total_phenols">
+				<name>total_phenols</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>777 39 849 87</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="Flavanoids">
+				<name>Flavanoids</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>659 603 731 651</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="Nonflavanoid_phenols">
+				<name>Nonflavanoid phenols</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1206 230 1278 278</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="proanthocyanins">
+				<name>proanthocyanins</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>986 81 1058 129</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="color_intensity">
+				<name>color_intensity</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>207 569 279 617</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="hue">
+				<name>hue</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>680 746 752 794</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="OD280_OD315">
+				<name>OD280/OD315</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1140 634 1212 682</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="Proline">
+				<name>Proline</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>295 765 367 813</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<textbox>
+				<caption>Input file: wine(1).txt\nData rows: 178\nElapsed time: 0.469s\n\nLearning algorithm: Bayesian Search\nAlgorithm parameters:\nIterations: 20\nMax parent count: 8\nSample size: 50\nLink probability: 0.1\nPrior link probability: 0.001\nSeed: 0\nMax search time: 0\nNo background knowledge\n\nBest score in iteration 0: -2615.78\nEM Log Likelihood: -2166.16</caption>
+				<font color="000000" name="Arial" size="8" />
+				<position>10 398 187 636</position>
+			</textbox>
+		</genie>
+	</extensions>
+</smile>

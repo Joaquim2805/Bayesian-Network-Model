@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="processed" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="num">
+			<state id="NO" />
+			<state id="YES" />
+			<probabilities>0.7227722772277227 0.2772277227722773</probabilities>
+		</cpt>
+		<cpt id="age">
+			<state id="s1_below_36" />
+			<state id="s2_36_48" />
+			<state id="s3_48_64" />
+			<state id="s4_64_up" />
+			<parents>num</parents>
+			<probabilities>0.0319634703196347 0.2876712328767123 0.5616438356164384 0.1187214611872146 0.002941176470588235 0.1441176470588235 0.6735294117647058 0.1794117647058824</probabilities>
+		</cpt>
+		<cpt id="sex">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>num</parents>
+			<probabilities>0.3698630136986301 0.6301369863013698 0.1904761904761905 0.8095238095238095</probabilities>
+		</cpt>
+		<cpt id="cp">
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<parents>num</parents>
+			<probabilities>0.0958904109589041 0.2146118721461187 0.3515981735159817 0.3378995433789954 0.02380952380952381 0.03571428571428571 0.1071428571428571 0.8333333333333333</probabilities>
+		</cpt>
+		<cpt id="trestbps">
+			<state id="s1_below_133" />
+			<state id="s2_133_157" />
+			<state id="s3_157_186" />
+			<state id="s4_186_up" />
+			<parents>num</parents>
+			<probabilities>0.6164383561643836 0.319634703196347 0.0593607305936073 0.0045662100456621 0.5238095238095237 0.3214285714285714 0.1428571428571428 0.0119047619047619</probabilities>
+		</cpt>
+		<cpt id="chol">
+			<state id="s1_below_214" />
+			<state id="s2_214_282" />
+			<state id="s3_282_up" />
+			<parents>num</parents>
+			<probabilities>0.2922374429223744 0.5251141552511416 0.182648401826484 0.2619047619047619 0.4285714285714285 0.3095238095238095</probabilities>
+		</cpt>
+		<cpt id="fbs">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>num</parents>
+			<probabilities>0.8767123287671232 0.1232876712328767 0.7857142857142857 0.2142857142857143</probabilities>
+		</cpt>
+		<cpt id="restecg">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<parents>num</parents>
+			<probabilities>0.5388127853881278 0.0045662100456621 0.45662100456621 0.3928571428571428 0.03571428571428571 0.5714285714285714</probabilities>
+		</cpt>
+		<cpt id="thalach">
+			<state id="s1_below_79" />
+			<state id="s2_79_137" />
+			<state id="s3_137_167" />
+			<state id="s4_167_up" />
+			<parents>num</parents>
+			<probabilities>0.001136363636363636 0.1738636363636364 0.5102272727272728 0.3147727272727273 0.0119047619047619 0.4880952380952381 0.4523809523809523 0.04761904761904762</probabilities>
+		</cpt>
+		<cpt id="exang">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>num</parents>
+			<probabilities>0.7808219178082192 0.2191780821917808 0.3928571428571428 0.6071428571428571</probabilities>
+		</cpt>
+		<cpt id="oldpeak">
+			<state id="s1_below_1" />
+			<state id="s2_1_2" />
+			<state id="s3_2_5" />
+			<state id="s4_5_up" />
+			<parents>num</parents>
+			<probabilities>0.8647727272727272 0.1011363636363636 0.03295454545454545 0.001136363636363636 0.4642857142857142 0.2380952380952381 0.2738095238095238 0.02380952380952381</probabilities>
+		</cpt>
+		<cpt id="slope">
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<parents>num</parents>
+			<probabilities>0.5844748858447488 0.365296803652968 0.0502283105022831 0.1666666666666667 0.7142857142857142 0.119047619047619</probabilities>
+		</cpt>
+		<cpt id="ca">
+			<state id="S0_0" />
+			<state id="S1_0" />
+			<state id="S2_0" />
+			<state id="S3_0" />
+			<state id="S_" />
+			<parents>num</parents>
+			<probabilities>0.7123287671232876 0.182648401826484 0.0593607305936073 0.0273972602739726 0.0182648401826484 0.2376470588235294 0.2964705882352941 0.2964705882352941 0.1670588235294118 0.002352941176470588</probabilities>
+		</cpt>
+		<cpt id="thal">
+			<state id="S3_0" />
+			<state id="S6_0" />
+			<state id="S7_0" />
+			<state id="S_" />
+			<parents>num</parents>
+			<probabilities>0.6894977168949772 0.0410958904109589 0.2648401826484018 0.0045662100456621 0.1785714285714285 0.1071428571428571 0.7023809523809523 0.0119047619047619</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 3.0.6518.0 ACADEMIC" name="processed">
+			<node id="age">
+				<name>age</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1145 309 1217 357</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="sex">
+				<name>sex</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1189 620 1261 668</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="cp">
+				<name>cp</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1203 472 1275 520</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="trestbps">
+				<name>trestbps</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>937 596 1009 644</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="chol">
+				<name>chol</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>699 582 771 630</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="fbs">
+				<name>fbs</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>514 547 586 595</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="restecg">
+				<name>restecg</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>450 406 522 454</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="thalach">
+				<name>thalach</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>425 275 497 323</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="exang">
+				<name>exang</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>338 133 410 181</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="oldpeak">
+				<name>oldpeak</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>527 115 599 163</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="slope">
+				<name>slope</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>731 107 803 155</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="ca">
+				<name>ca</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>918 119 990 167</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="thal">
+				<name>thal</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1115 105 1187 153</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="num">
+				<name>num</name>
+				<interior color="ffff80" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>745 346 817 394</position>
+				<barchart active="true" />
+			</node>
+			<textbox>
+				<caption>Input file: processed.cleveland.txt\nData rows: 303\nElapsed time: 0.125s\n\nLearning algorithm: Naive Bayes\nAlgorithm parameters:\nClass variable: num\n\nEM Log Likelihood: -3396.64</caption>
+				<font color="000000" name="Arial" size="8" />
+				<position>10 322 172 448</position>
+			</textbox>
+		</genie>
+	</extensions>
+</smile>

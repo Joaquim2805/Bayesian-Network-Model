@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="COVID19" diagtype="target">
+			<state id="YES" fault="true" />
+			<state id="NO" />
+			<probabilities>0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Cough" diagtype="observation" ranked="true">
+			<state id="strong" />
+			<state id="light" />
+			<state id="no" />
+			<parents>COVID19</parents>
+			<probabilities>0.4 0.2 0.4 0.1 0.2 0.7</probabilities>
+		</cpt>
+		<cpt id="Fever" diagtype="observation" ranked="true">
+			<state id="above38C" />
+			<state id="below38C" />
+			<parents>COVID19</parents>
+			<probabilities>0.6 0.4 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="Nausea" diagtype="observation" ranked="true">
+			<state id="yes" />
+			<state id="no" />
+			<parents>COVID19</parents>
+			<probabilities>0.15 0.85 0.05 0.95</probabilities>
+		</cpt>
+		<cpt id="Loss_of_taste" diagtype="observation" ranked="true">
+			<state id="yes" />
+			<state id="no" />
+			<parents>COVID19</parents>
+			<probabilities>0.5 0.5 0.01 0.99</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 3.0.6518.0 ACADEMIC" name="Network1">
+			<node id="COVID19">
+				<name>COVID19</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" bold="true" />
+				<position>513 193 619 251</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Cough">
+				<name>Cough</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" bold="true" />
+				<position>221 322 316 394</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="Fever">
+				<name>Fever</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" bold="true" />
+				<position>401 399 496 471</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Nausea">
+				<name>Nausea</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" bold="true" />
+				<position>567 417 662 489</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Loss_of_taste">
+				<name>Loss_of_taste</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" bold="true" />
+				<position>774 395 869 467</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+		</genie>
+	</extensions>
+</smile>
